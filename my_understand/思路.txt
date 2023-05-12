@@ -1,0 +1,7 @@
+思路为：
+1.先将整个游戏最外层的div id=kof 封装为一个类 $kof
+2.定义一个辅助类AcGameObject,该类里面有初始化，更新及requestAnimationFrame(func)
+里面的step函数
+3.将地图定义为一个类GameMap,继承辅助类AcGameObject,GameMap里面
+定义一个canvas画布,start函数,update函数,render函数(用来清除画布)
+4.在类kof里面创建一个GameMap实例对象
